@@ -10,28 +10,29 @@
   <!-- Font Awesome -->
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   
-  <header class="bg-white sticky top-0 z-50 shadow rounded-lg">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-40">
+  <header class="bg-white sticky top-0 z-50  shadow-lg rounded-b-lg">
+    <div class="max-w-7xl px-2 sm:px-3 lg:px-2">
+      <div class="flex items-center justify-between h-[14vh]">
         <!-- Logo -->
         <a href="#" class="flex items-center gap-3">
           <!-- Replace with your fairway logo file -->
-          <img src="/img/fairway logo.avif" alt="Fairway logo" class="h-20 w-auto object-contain" onerror="this.onerror=null;this.src='https://via.placeholder.com/150x40?text=Fairway';"/>
+          <img src="/img/fairway logo.avif" alt="Fairway logo" class="h-20 w-auto object-contain">
         </a>
 
         <!-- Center nav (hidden on small screens) -->
-        <nav class="hidden lg:flex items-center gap-8">
-          <a class="nav-link text-green-700 hover:text-green-600 font-medium" href="#">About Us</a>
-          <a class="nav-link text-green-700 hover:text-green-600 font-medium" href="#">Locations</a>
-          <a class="nav-link text-green-700 hover:text-green-600 font-medium" href="#">Loan Products</a>
-          <a class="nav-link text-green-700 hover:text-green-600 font-medium" href="#">Calculators</a>
-          <a class="nav-link text-green-700 hover:text-green-600 font-medium" href="#">Videos</a>
-          <a class="nav-link text-green-700 hover:text-green-600 font-medium" href="#">Careers</a>
+        <nav class="hidden lg:flex items-center gap-6 font-['Montserrat'] text-[13px]">
+          <a class="nav-link text-green-900 hover:text-green-600 font-[550]" href="#">About Us</a>
+          <a class="nav-link text-green-900 hover:text-green-600 font-[550]" href="#">Locations</a>
+          <a class="nav-link text-green-900 hover:text-green-600 font-[550]" href="#">Loan Products</a>
+          <a class="nav-link text-green-900 hover:text-green-600 font-[550]" href="#">Calculators</a>
+          <a class="nav-link text-green-900 hover:text-green-600 font-[550]" href="#">Videos</a>
+          <a class="nav-link text-green-900 hover:text-green-600 font-[550]" href="#">Careers</a>
         </nav>
 
         <!-- Right side: search + get started + hamburger -->
@@ -88,12 +89,12 @@
 
     <div class="font-[sans-serif] py-5 px-4 text-[.7rem] italic">
     <div class="max-w-7xl mx-auto">
-        <div class="inline-flex items-center gap-2 bg-white hover:text-white rounded-full px-4 py-0">
+        <a href="index.html" class="inline-flex items-center gap-2 bg-white hover:text-white rounded-full px-4 py-0">
             <i class="fas fa-home text-emerald-600 text-sm"></i>
             <span class="text-[#00973a] font-semibold ">HOME</span>
             <span class="text-[#00973a]">|</span>
             <span class="text-[#00973a] font-semibold ">MORTGAGE RESOURCES</span>
-        </div>
+        </a>
     </div>
     </div>
 
@@ -108,7 +109,7 @@
                     </h1>
                 </div>
                 
-                <p class="font-['Montserrat'] text-gray-800 text-base lg:text-lg leading-relaxed mb-6">
+                <p class="font-['Montserrat'] text-gray-900 text-sm lg:text-[14px] leading-relaxed mb-6">
                     At Fairway, we understand that purchasing a home is generally one of the most important financial decisions you can make in your lifetime. It's essential to evaluate your options and make a plan that fits your financial needs. Explore these mortgage calculators to get started off on the right path to homeownership!
                 </p>
 
@@ -117,7 +118,7 @@
 
             <!-- Right Content - Image -->
             <div class="relative  flex items-center justify-center ">
-                <img src="/calculatormort.avif" alt="Mortgage Calculators" class="w-full h-full ">
+                <img src="img/calculatormort.avif" alt="Mortgage Calculators" class="w-full h-full ">
             </div>
         </div>
     </div>
@@ -125,160 +126,271 @@
  </section>   
 
 
-
-
-<!--Card-->
-
-<section>
-
-    <div>
-       <div>
-        <p></p>
-       </div> 
-    </div>
-</section>
-
-
-
-
-
- 
-
-
-<!-- Footer -->
-<footer class="bg-white py-16 px-4 lg:px-8 border-t border-gray-200">
-    <div class="max-w-7xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-
-            <!-- Column 1 - Logo and Contact -->
-            <div class="lg:col-span-1">
-                <!-- Logo -->
-                <div class="flex items-center gap-2 mb-6">
-                    <svg class="w-12 h-12" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="2" y="15" width="36" height="22" stroke="black" stroke-width="2" fill="none"/>
-                        <polygon points="20,2 38,15 2,15" fill="black"/>
-                        <line x1="20" y1="15" x2="20" y2="37" stroke="black" stroke-width="2"/>
-                        <rect x="11" y="21" width="6" height="8" fill="black"/>
-                        <rect x="23" y="21" width="6" height="8" fill="black"/>
-                    </svg>
-                    <div>
-                        <h3 class="font-black text-sm tracking-wider">FAIRWAY</h3>
-                        <p class="text-xs font-bold text-green-600">HOME</p>
-                        <p class="text-xs font-bold text-gray-700">MORTGAGE</p>
+ <div class="pappy py-[4%] relative">
+    <div class="z-9 items-center w-full max-w-[1440px] mx-auto px-6 gap-6 relative flex flex-wrap">
+        <div class="h-[90vh] gap-x-[14px] gap-y-[14px] rounded-lg flex-wrap center my-7 text-[12px] leading-[14px] flex-row items-start flex">
+            <div class="log bg-[#f8f8f8] border-[1px] border-solid border-[#e2e2e2] rounded-xl self-stretch max-w-[368px] mb-[10px] p-30px text-[14px] leading-[22px]">
+                <div class="text-center flex-col content-center items-center py-10 flex">
+                    <div class="border-[5px] border-solid border-[#00973a] rounded-[100%] content-center items-center min-w-20 min-h-20 mb-[21px] py-[10px] pl-5 flex text-center tracking-[.1em] uppercase px-[14px] text-[12px] leading-6 font-extrabold">
+                        <div>
+                            <img src="img/cal.svg" alt="" width="32" class="align-middle max-w-full inline-block">
+                        </div>
                     </div>
-                </div>
-
-                <!-- Social Icons -->
-                <div class="flex gap-4 mb-6">
-                    <a href="#" class="w-10 h-10 rounded-full border-2 border-gray-400 flex items-center justify-center text-gray-600 hover:border-green-600 hover:text-green-600 transition">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#" class="w-10 h-10 rounded-full border-2 border-gray-400 flex items-center justify-center text-gray-600 hover:border-green-600 hover:text-green-600 transition">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#" class="w-10 h-10 rounded-full border-2 border-gray-400 flex items-center justify-center text-gray-600 hover:border-green-600 hover:text-green-600 transition">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="#" class="w-10 h-10 rounded-full border-2 border-gray-400 flex items-center justify-center text-gray-600 hover:border-green-600 hover:text-green-600 transition">
-                        <i class="fab fa-twitter"></i>
+                    <div class="w-full max-w-[368px] mx-auto">
+                        <h2 style="font-family: 'Bebas Neue', serif;" class="mt-0 mb-[20px] text-[3rem] leading-[3rem]">
+                            HELOC payment <br> calculator
+                        </h2>
+                        <div class="tracking-[3px] mb-[30px] uppercase text-[11px] font-normal leading-[1.4em]">possible monthly payments</div>
+                        <div class="font-['Montserrat']">Figure out your monthly minimum payment for your home equity line of credit (HELOC)</div>
+                    </div>
+                    <a href="#" class="cursor-pointer text-[14px] mt-9 gap-x-1 bg-[#00973a] text-white text-center rounded-xl justify-center mx-[2px] px-[20px] py-[14px] font-['Montserrat'] font-semibold leading-5 inline-block shadow-white max-w-full">
+                        <div>Estimate Your Payment</div>
                     </a>
                 </div>
-
-                <!-- Madison Headquarters -->
-                <div class="border-t border-gray-300 pt-6">
-                    <h4 class="font-bold text-gray-900 text-sm mb-3">Madison Headquarters Location</h4>
-                    <p class="text-gray-700 text-sm mb-3">
-                        4750 S. Biltmore Lane, Madison, WI 53718
-                    </p>
-                    <p class="text-gray-700 text-sm mb-2">
-                        <span class="font-semibold">Toll Free:</span> 
-                        <a href="tel:8669124800" class="text-green-600 hover:text-green-700 transition">866-912-4800</a>
-                    </p>
-                    <p class="text-gray-600 text-sm mb-3">Monday–Friday, 8:30 a.m.–5:00 p.m. Central</p>
-                    <a href="#" class="text-green-600 hover:text-green-700 transition text-sm font-semibold">NMLS Consumer Access</a>
-                </div>
-            </div>
-
-            <!-- Column 2 - Customer Service -->
-            <div>
-                <h3 class="font-bold text-gray-900 text-lg mb-6 pb-3 border-b-2 border-gray-300">
-                    Customer Service
-                </h3>
-                <div class="space-y-4">
-                    <div>
-                        <p class="text-gray-700 text-sm mb-1">
-                            <span class="font-semibold">Toll Free:</span> 
-                            <a href="tel:8002017544" class="text-green-600 hover:text-green-700 transition">800-201-7544</a>
-                        </p>
-                    </div>
-                    <div>
-                        <a href="#" class="text-green-600 hover:text-green-700 transition text-sm font-semibold">Contact Customer Service</a>
-                    </div>
-                    <div>
-                        <a href="#" class="text-green-600 hover:text-green-700 transition text-sm font-semibold">Loan Serviced in New York? Click Here</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Column 3 - Report Fraud -->
-            <div>
-                <h3 class="font-bold text-gray-900 text-lg mb-6 pb-3 border-b-2 border-gray-300">
-                    Report Fraud / Suspicious Activity
-                </h3>
-                <div class="space-y-4">
-                    <div>
-                        <p class="text-gray-700 text-sm mb-1">
-                            <span class="font-semibold">Hotline:</span> 
-                            <a href="tel:8559200002" class="text-green-600 hover:text-green-700 transition">855-920-0002</a>
-                        </p>
-                    </div>
-                    <div>
-                        <a href="#" class="text-green-600 hover:text-green-700 transition text-sm font-semibold">Report An Incident Online, click here</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Column 4 - Complaints -->
-            <div>
-                <h3 class="font-bold text-gray-900 text-lg mb-6 pb-3 border-b-2 border-gray-300">
-                    Complaints
-                </h3>
-                <div class="space-y-4">
-                    <div>
-                        <p class="text-gray-700 text-sm mb-1">
-                            <span class="font-semibold">Toll Free:</span> 
-                            <a href="tel:8776990353" class="text-green-600 hover:text-green-700 transition">877-699-0353</a>
-                        </p>
-                    </div>
-                    <div>
-                        <a href="#" class="text-green-600 hover:text-green-700 transition text-sm font-semibold">Submit Complaint</a>
-                    </div>
-                </div>
-            </div>
-
+           </div>
         </div>
 
-        <!-- Legal Information & Links Section -->
-        <div class="border-t border-gray-300 pt-8">
-            <h3 class="font-bold text-gray-900 text-lg mb-6">Legal Information & Links</h3>
-            <div class="flex flex-wrap gap-6">
-                <a href="#" class="text-green-600 hover:text-green-700 transition text-sm font-semibold">Privacy Policy</a>
-                <a href="#" class="text-green-600 hover:text-green-700 transition text-sm font-semibold">Terms Of Use</a>
-                <a href="#" class="text-green-600 hover:text-green-700 transition text-sm font-semibold">Legal Disclosures</a>
-                <a href="#" class="text-green-600 hover:text-green-700 transition text-sm font-semibold">Licensing</a>
-                <a href="#" class="text-green-600 hover:text-green-700 transition text-sm font-semibold">Texas Consumer Complaints</a>
-                <a href="#" class="text-green-600 hover:text-green-700 transition text-sm font-semibold">IL Community Reinvestment Notice</a>
-            </div>
+        <div class="h-[90vh] gap-x-[14px] gap-y-[14px] rounded-lg flex-wrap center my-7 text-[12px] leading-[14px] flex-row items-start flex">
+            <div class="log bg-[#f8f8f8] border-[1px] border-solid border-[#e2e2e2] rounded-xl self-stretch max-w-[368px] mb-[10px] p-30px text-[14px] leading-[22px]">
+                <div class="text-center flex-col content-center items-center py-10 flex">
+                    <div class="border-[5px] border-solid border-[#00973a] rounded-[100%] content-center items-center min-w-20 min-h-20 mb-[21px] py-[10px] pl-5 flex text-center tracking-[.1em] uppercase px-[14px] text-[12px] leading-6 font-extrabold">
+                        <div>
+                            <img src="img/cal.svg" alt="" width="32" class="align-middle max-w-full inline-block">
+                        </div>
+                    </div>
+                    <div class="w-full max-w-[368px] mx-auto">
+                        <h2 style="font-family: 'Bebas Neue', serif;" class="mt-0 mb-[20px] text-[3rem] leading-[3rem]">
+                            Rent vs. buy calculator
+                        </h2>
+                        <div class="tracking-[3px] mb-[30px] uppercase text-[11px] font-normal leading-[1.4em]">Total Cost & Comparison</div>
+                        <div class="font-['Montserrat']">See the possible upside to purchasing a home instead of renting.</div>
+                    </div>
+                    <a href="#" class="cursor-pointer text-[14px] mt-9 gap-x-1 bg-[#00973a] text-white text-center rounded-xl justify-center mx-[2px] px-[20px] py-[14px] font-['Montserrat'] font-semibold leading-5 inline-block shadow-white max-w-full">
+                        <div>Calculate Your Options</div>
+                    </a>
+                </div>
+           </div>
         </div>
 
-        <!-- Copyright -->
-        <div class="border-t border-gray-300 mt-8 pt-6 text-center">
-            <p class="text-gray-600 text-sm">
-                &copy; 2024 Fairway Home Mortgage. All rights reserved.
-            </p>
+        <div class="h-[90vh] gap-x-[14px] gap-y-[14px] rounded-lg flex-wrap center my-7 text-[12px] leading-[14px] flex-row items-start flex">
+            <div class="log bg-[#f8f8f8] border-[1px] border-solid border-[#e2e2e2] rounded-xl self-stretch max-w-[368px] mb-[10px] p-30px text-[14px] leading-[22px]">
+                <div class="text-center flex-col content-center items-center py-10 flex">
+                    <div class="border-[5px] border-solid border-[#00973a] rounded-[100%] content-center items-center min-w-20 min-h-20 mb-[21px] py-[10px] pl-5 flex text-center tracking-[.1em] uppercase px-[14px] text-[12px] leading-6 font-extrabold">
+                        <div>
+                            <img src="img/cal.svg" alt="" width="32" class="align-middle max-w-full inline-block">
+                        </div>
+                    </div>
+                    <div class="w-full max-w-[368px] mx-auto">
+                        <h2 style="font-family: 'Bebas Neue', serif;" class="mt-0 mb-[20px] text-[3rem] leading-[3rem]">
+                            Mortagage payment <br> calculator
+                        </h2>
+                        <div class="tracking-[3px] mb-[30px] uppercase text-[11px] font-normal leading-[1.4em]">Breakdown & Schedule</div>
+                        <div class="font-['Montserrat']">Calculate what your potential mortgage options could be.</div>
+                    </div>
+                    <a href="#" class="cursor-pointer text-[14px] mt-9 gap-x-1 bg-[#00973a] text-white text-center rounded-xl justify-center mx-[2px] px-[20px] py-[14px] font-['Montserrat'] font-semibold leading-5 inline-block shadow-white max-w-full">
+                        <div>Estimate Payment</div>
+                    </a>
+                </div>
+           </div>
+        </div>
+
+        <div class="h-[90vh] gap-x-[14px] gap-y-[14px] rounded-lg flex-wrap center my-7 text-[12px] leading-[14px] flex-row items-start flex">
+            <div class="log bg-[#f8f8f8] border-[1px] border-solid border-[#e2e2e2] rounded-xl self-stretch max-w-[368px] mb-[10px] p-30px text-[14px] leading-[22px]">
+                <div class="text-center flex-col content-center items-center py-10 flex">
+                    <div class="border-[5px] border-solid border-[#00973a] rounded-[100%] content-center items-center min-w-20 min-h-20 mb-[21px] py-[10px] pl-5 flex text-center tracking-[.1em] uppercase px-[14px] text-[12px] leading-6 font-extrabold">
+                        <div>
+                            <img src="img/cal.svg" alt="" width="32" class="align-middle max-w-full inline-block">
+                        </div>
+                    </div>
+                    <div class="w-full max-w-[368px] mx-auto">
+                        <h2 style="font-family: 'Bebas Neue', serif;" class="mt-0 mb-[20px] text-[3rem] leading-[3rem]">
+                           Refinance <br> Calculator
+                        </h2>
+                        <div class="tracking-[3px] mb-[30px] uppercase text-[11px] font-normal leading-[1.4em]">Monthly & Total Payment</div>
+                        <div class="font-['Montserrat']">See options that may reduce your monthly payment* or get cash out.</div>
+                    </div>
+                    <a href="#" class="cursor-pointer text-[14px] mt-9 gap-x-1 bg-[#00973a] text-white text-center rounded-xl justify-center mx-[2px] px-[20px] py-[14px] font-['Montserrat'] font-semibold leading-5 inline-block shadow-white max-w-full">
+                        <div>Consider a Refinance</div>
+                    </a>
+                </div>
+           </div>
+        </div>
+
+        <div class="h-[90vh] gap-x-[14px] gap-y-[14px] rounded-lg flex-wrap center my-7 text-[12px] leading-[14px] flex-row items-start flex">
+            <div class="log bg-[#f8f8f8] border-[1px] border-solid border-[#e2e2e2] rounded-xl self-stretch max-w-[368px] mb-[10px] p-30px text-[14px] leading-[22px]">
+                <div class="text-center flex-col content-center items-center py-10 flex">
+                    <div class="border-[5px] border-solid border-[#00973a] rounded-[100%] content-center items-center min-w-20 min-h-20 mb-[21px] py-[10px] pl-5 flex text-center tracking-[.1em] uppercase px-[14px] text-[12px] leading-6 font-extrabold">
+                        <div>
+                            <img src="img/cal.svg" alt="" width="32" class="align-middle max-w-full inline-block">
+                        </div>
+                    </div>
+                    <div class="w-full max-w-[368px] mx-auto">
+                        <h2 style="font-family: 'Bebas Neue', serif;" class="mt-0 mb-[20px] text-[3rem] leading-[3rem]">
+                            Home <br> Affordability Calculator
+                        </h2>
+                        <div class="tracking-[3px] mb-[30px] uppercase text-[11px] font-normal leading-[1.4em]">How Much can you afford?</div>
+                        <div class="font-['Montserrat']">Estimate your potential home price based on income and other factors.</div>
+                    </div>
+                    <a href="#" class="cursor-pointer text-[14px] mt-9 gap-x-1 bg-[#00973a] text-white text-center rounded-xl justify-center mx-[2px] px-[20px] py-[14px] font-['Montserrat'] font-semibold leading-5 inline-block shadow-white max-w-full">
+                        <div>See What You Can Afford</div>
+                    </a>
+                </div>
+           </div>
+        </div>
+
+        <div class="h-[90vh] gap-x-[14px] gap-y-[14px] rounded-lg flex-wrap center my-7 text-[12px] leading-[14px] flex-row items-start flex">
+            <div class="log bg-[#f8f8f8] border-[1px] border-solid border-[#e2e2e2] rounded-xl self-stretch max-w-[368px] mb-[10px] p-30px text-[14px] leading-[22px]">
+                <div class="text-center flex-col content-center items-center py-10 flex">
+                    <div class="border-[5px] border-solid border-[#00973a] rounded-[100%] content-center items-center min-w-20 min-h-20 mb-[21px] py-[10px] pl-5 flex text-center tracking-[.1em] uppercase px-[14px] text-[12px] leading-6 font-extrabold">
+                        <div>
+                            <img src="img/cal.svg" alt="" width="32" class="align-middle max-w-full inline-block">
+                        </div>
+                    </div>
+                    <div class="w-full max-w-[368px] mx-auto">
+                        <h2 style="font-family: 'Bebas Neue', serif;" class="mt-0 mb-[20px] text-[3rem] leading-[3rem]">
+                            Mortgage Compare Calculator
+                        </h2>
+                        <div class="tracking-[3px] mb-[30px] uppercase text-[11px] font-normal leading-[1.4em]">Compare Loan Costs</div>
+                        <div class="font-['Montserrat']">Compare the remaining balance on different scenarios after a set amount of years based on terms and rates.</div>
+                    </div>
+                    <a href="#" class="cursor-pointer text-[14px] mt-9 gap-x-1 bg-[#00973a] text-white text-center rounded-xl justify-center mx-[2px] px-[20px] py-[14px] font-['Montserrat'] font-semibold leading-5 inline-block shadow-white max-w-full">
+                        <div>Compare Loans</div>
+                    </a>
+                </div>
+           </div>
+        </div>
+
+        <div class="w-full max-w-[1280px] mx-auto text-[12px] leading-[22px] p-[30px] bg-[#ffffffb3] border-[1px] border-solid border-[#c4d4c9] self-stretch mt-5 mb-[25px] relative overflow-hidden">
+            <div class="text-[10px] leading-4 mb-0 italic ">
+                <p class="text-[10px] mb-[14px] leading-6">
+                    <em class="italic font-['Montserrat']">*By refinancing your existing loan, your total finance charges may be higher over the life of the loan.</em>
+                </p>
+            </div>
         </div>
     </div>
-</footer>
+ </div>
+
+    <footer class="text-[.8rem] md:text-sm leading-relaxed bg-gray-50">
+    <div  class="flex-row flex-nowrap justify-between self-stretch items-start py-6">
+        <div class="z-9 flex-none items-center w-full max-w-[1440px] mx-auto px-4 md:px-6 relative">
+            <div class="gap-4 md:gap-6 justify-between items-stretch flex-col lg:flex-row flex">
+                <div class="gap-3 text-[#3f4444] bg-white border border-white border-solid rounded-xl flex-col mb-4 pt-3 px-4 md:px-6 pb-4 md:pb-6 flex">
+                    <div class="self-stretch">
+                        <div class="max-w-[200px] mx-auto pb-2">
+                            <img src="/img/fairway logo.avif" alt="Fairway Logo" class="w-full">
+                        </div>
+                        <div class="gap-2 bg-[#ffffff4d] justify-center items-start p-2 flex-row self-stretch flex">
+                            <a href="#" class="bg-[#115740] rounded-full mx-1 p-1 max-w-full inline-block hover:bg-[#00973a] transition-colors duration-300">
+                                <img src="/img/Facebook.png" alt="Facebook icon" width="30" class="transition-opacity duration-200 hover:opacity-80">
+                            </a>
+
+                            <a href="#" class="bg-[#115740] rounded-full mx-1 p-1 max-w-full inline-block hover:bg-[#00973a] transition-colors duration-300">
+                                <img src="/img/insta.png" alt="Instagram icon" width="30" class="transition-opacity duration-200 hover:opacity-80">
+                            </a>
+
+                            <a href="#" class="bg-[#115740] rounded-full mx-1 p-1 max-w-full inline-block hover:bg-[#00973a] transition-colors duration-300">
+                                <img src="/img/linkedin.png" alt="LinkedIn icon" width="30" class="transition-opacity duration-200 hover:opacity-80">
+                            </a>
+
+                            <a href="#" class="bg-[#115740] rounded-full mx-1 p-1 max-w-full inline-block hover:bg-[#00973a] transition-colors duration-300">
+                                <img src="/img/X.png" alt="X icon" width="30" class="transition-opacity duration-200 hover:opacity-80">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="text-center md:text-left md:ml-12">
+                        <div>
+                            <strong class="font-bold">Madison Headquarters Location</strong>
+                        </div>
+                        <div>
+                            4750 S. Biltmore Lane, Madison, WI 53718 <br>
+                            <strong>Toll Free:</strong>
+                            866-912-4800
+                        </div>
+                        <div>Monday-Friday, 8:30 a.m.-5:00 p.m. Central</div>
+                        <a href="#" class="text-[#00973a] underline hover:text-[#115740] transition-colors duration-300">NMLS Consumer Access</a>
+                    </div>
+                </div>
+
+                <div class="gap-3 flex-1 self-center flex-col items-start">
+                    <div class="gap-4 flex-row justify-between self-stretch items-start flex">
+                        <div class="gap-1 bg-[#ffffff40] border-2 border-solid border-white rounded-lg flex-col self-stretch p-3 flex hover:shadow-lg transition-all duration-300">
+                            <div class="border-b border-b-solid border-b-[#aaa] mb-2 pb-2 text-base font-semibold">Customer service</div>
+                            <div class="text-sm leading-relaxed">
+                                <strong>Toll Free:</strong>
+                                <span>800-201-7544</span>
+                            </div>
+                            <a href="#" class="text-[#00973a] underline hover:text-[#115740] transition-colors duration-300">Contact Customer Service</a>
+                            <a href="#" class="text-[#00973a] underline hover:text-[#115740] transition-colors duration-300">Loan Serviced In New York? Click Here</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gap-3 flex-1 self-center flex-col items-start">
+                    <div class="gap-4 flex-row justify-between self-stretch items-start flex">
+                        <div class="gap-1 bg-[#ffffff40] border-2 border-solid border-white rounded-lg flex-col self-stretch p-3 flex hover:shadow-lg transition-all duration-300">
+                            <div class="border-b border-b-solid border-b-[#aaa] mb-2 pb-2 text-base font-semibold">Report Fraud / Suspicious Activity </div>
+                            <div class="text-sm leading-relaxed">
+                                <strong>Hotline:</strong>
+                                <span>855-902-0002</span>
+                            </div>
+                            <a href="#" class="text-[#00973a] underline hover:text-[#115740] transition-colors duration-300">Report An Incident Online, click here</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gap-3 flex-1 self-center flex-col items-start">
+                    <div class="gap-4 flex-row justify-between self-stretch items-start flex">
+                        <div class="gap-1 bg-[#ffffff40] border-2 border-solid border-white rounded-lg flex-col self-stretch p-3 flex hover:shadow-lg transition-all duration-300">
+                            <div class="border-b border-b-solid border-b-[#aaa] mb-2 pb-2 text-base font-semibold">Payment Information</div>
+                            <div class="text-sm leading-relaxed">
+                                <strong>Toll Free:</strong>
+                                <span>800-555-1234</span>
+                            </div>
+                            <a href="#" class="text-[#00973a] underline hover:text-[#115740] transition-colors duration-300">Make a Payment</a>
+                            <a href="#" class="text-[#00973a] underline hover:text-[#115740] transition-colors duration-300">Servicing FAQ's</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rounded-xl self-stretch py-4 px-3 mt-6">
+                    <div class="border-b border-dotted border-[#aaa] mb-3 pb-2 text-base font-semibold">Legal Information & Links</div>
+                    <div class="gap-4 flex-row justify-between self-stretch items-start flex">
+                        <div class="gap-2 flex-row flex-wrap justify-start items-start flex">
+                            <a href="#" class="text-[#00973a] mb-3 underline hover:text-[#115740] transition-colors duration-300">Privacy Policy</a>
+                            <a href="#" class="text-[#00973a] mb-3 underline hover:text-[#115740] transition-colors duration-300">Terms Of Use</a>
+                            <a href="#" class="text-[#00973a] mb-3 underline hover:text-[#115740] transition-colors duration-300">Legal Disclosures</a>
+                            <a href="#" class="text-[#00973a] mb-3 underline hover:text-[#115740] transition-colors duration-300">Licensing</a>
+                            <a href="#" class="text-[#00973a] mb-3 underline hover:text-[#115740] transition-colors duration-300">Texas Consumers Complaints</a>
+                            <a href="#" class="text-[#00973a] mb-3 underline hover:text-[#115740] transition-colors duration-300">IL Community Reinvestment Notice</a>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+  </footer> 
+
+
+    <div class="bg-[#2c2d32] text-white py-6 px-4 md:px-8 w-full">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="text-xs text-gray-300 text-center md:text-left">
+                <p>© Copyright 2025 Fairway Independent Mortgage Corporation | NMLS Entity ID #2289 |</p>
+                <a href="#" class="text-gray-300 hover:underline transition-all duration-300">www.nmlsconsumeraccess.org</a>
+                <span> All Rights reserved.</span>
+            </div>
+            
+            <div class="flex items-center gap-2 md:gap-4 flex-wrap justify-center">
+                <img src="/img/icon1.png" alt="NMLS" class="h-8 md:h-10 p-1 hover:scale-110 transition-transform duration-300">
+                <img src="/img/icon2.png" alt="Equal Housing" class="h-8 md:h-10 p-1 hover:scale-110 transition-transform duration-300">
+                <img src="/img/icon3.png" alt="NAHREP" class="h-8 md:h-10 p-1 hover:scale-110 transition-transform duration-300">
+                <img src="img/icon4.png" alt="Realtor" class="h-8 md:h-10 p-1 hover:scale-110 transition-transform duration-300">
+                <img src="img//icon5.png" alt="FHA" class="h-8 md:h-10 p-1 hover:scale-110 transition-transform duration-300">
+                <img src="img//icon6.png" alt="BBB Accredited" class="h-10 md:h-12 p-1 hover:scale-110 transition-transform duration-300">
+            </div>
+        </div>
+    </div>
 
 
 

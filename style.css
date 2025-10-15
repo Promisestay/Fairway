@@ -102,6 +102,17 @@
         .bggg{
             background-image: radial-gradient(#00973a99, #00973a99), url(/img/bg.avif);
         }
+
+        .pappy{
+            background-image: linear-gradient(#ffffffa6, #ffffffa6), url(/img/bg.avif);
+        }
+
+        .log{
+            background-image: url(/log.png), url(/bg-log.svg);
+            background-position: 97% 2%, 100% 0;
+            background-repeat: no-repeat, no-repeat;
+            background-size: 30px, 125px;
+        }
         
         /* Hide mobile menu on desktop */
         @media (min-width: 1024px) {
