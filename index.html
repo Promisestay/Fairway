@@ -1,0 +1,696 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Fairway.com | </title>
+</head>
+<body class="min-h-screen">
+    <header style="font-family: 'Bebas Neue', sans-serif;" class="mt-0 sticky">
+        <div class="flex items-center justify-between px-4 md:px-8 pb-1 bg-white rounded-b-lg shadow-lg">
+            <div class="logo w-32 md:w-48 mt-3 flex items-center gap-4">
+              <img src="/img/fairway logo.avif" alt="logo" class="w-full">
+            </div>
+
+           <nav class="hidden lg:flex items-center space-x-4 mt-6 text-sm font-medium font-['Montserrat']">
+            <a href="#" style="transform: translate3d(0px, 0px ,0px) scale3d(0, 1, 1) rotateX(0deg) rotateY('0deg') rotateZ('0deg') skew(0deg, 0deg); transform-style: preserve-3d;" class="text-[#00973a] hover:text-[#115740] transition-colors hover:border-b-2 hover:border-[#00973a]">About Us</a>
+            <a href="#" class="text-[#00973a] hover:text-[#115740] transition-colors hover:border-b-2 hover:border-[#00973a]">Locations</a>
+            <a href="#" class="text-[#00973a] hover:text-[#115740] hover:border-b-2 hover:border-[#00973a] transition-colors">Loan Products</a>
+            <a href="#" class="text-[#00973a] hover:text-[#115740] hover:border-b-2 hover:border-[#00973a] transition-colors">Calculators</a>
+            <a href="#" class="text-[#00973a] hover:text-[#115740] hover:border-b-2 hover:border-[#00973a] transition-colors">Videos</a>
+            <a href="#" class="text-[#00973a] hover:text-[#115740] hover:border-b-2 hover:border-[#00973a] transition-colors">Careers</a>
+           </nav>
+
+           <div class="flex items-center gap-4 font-['Montserrat']">
+               <button class="hidden md:block btn-1 mt-4 border rounded-xl py-3 px-7 bg-[#ff8200] text-white">Get Started</button>
+               
+               <div class="hidden lg:block mt-3">
+                <a href="#" class="flex flex-col items-center hover:text-[#00973a] transition-colors">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg> <br>    
+                <svg xmlns="http://www.w3.org/2000/svg" class="mb-1" width="25" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  
+                </svg>
+                <span class="text-xs">SEARCH</span>
+               </a>
+               </div>
+               
+               
+               <button class="mobile-menu-button lg:hidden mt-4" onclick="toggleMenu()">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                       <line x1="3" y1="6" x2="21" y2="6"></line>
+                       <line x1="3" y1="12" x2="21" y2="12"></line>
+                       <line x1="3" y1="18" x2="21" y2="18"></line>
+                   </svg>
+               </button>
+           </div>
+        </div>
+        
+        
+        <div class="mobile-menu bg-white shadow-lg lg:hidden">
+            <nav class="flex flex-col p-4 space-y-3 text-sm font-medium">
+                <a href="#" class="hover:text-[#00973a] transition-colors py-2">About Us</a>
+                <a href="#" class="hover:text-[#00973a] transition-colors py-2">Locations</a>
+                <a href="#" class="hover:text-[#00973a] transition-colors py-2">Loan Products</a>
+                <a href="#" class="hover:text-[#00973a] transition-colors py-2">Calculators</a>
+                <a href="#" class="hover:text-[#00973a] transition-colors py-2">Videos</a>
+                <a href="#" class="hover:text-[#00973a] transition-colors py-2">Careers</a>
+                <button class="btn-1 border rounded-xl py-3 px-7 w-full">Get Started</button>
+                <a href="#" class="flex items-center justify-center hover:text-[#00973a] transition-colors py-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <span>SEARCH</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex flex-col lg:flex-row justify-start px-4 md:px-8">
+        <div class="flex-1">
+            <div class="flex flex-col items-start mt-5">
+              <h1 class="xxl-title">
+                ALL ROADS
+                <span class="stroke-type uppercase">Lead</span>
+              </h1>
+              <span class="boxed-text font-['Brush_Script_MT',cursive]">Home</span>
+            </div>
+
+            <p class="mt-7 text-sm md:text-base leading-relaxed text-gray-800 font-['Montserrat',serif] max-w-2xl">At Fairway Home Mortgage our goal is to unlock the doors to homeownership for EVERYONE—your dream, our mission. A nationwide network of Loan Officers you can trust with the speed and service you should expect when finding a lender to serve your needs.</p>
+            <button class="border-2 border-gray-800 bg-gray-900 text-white py-2 px-5 mt-7 mb-4 rounded-lg hover:bg-white hover:text-black hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">Get Pre-Approved* Today</button>
+            <div class="flex flex-wrap text-xs italic leading-relaxed text-gray-800 tracking-wider max-w-2xl">
+                *Pre-approval is based on a preliminary review of credit information provided to Fairway Independent Mortgage Corporation, which has not been reviewed by underwriting. If you have submitted verifying documentation, you have done so voluntarily. Final loan approval is subject to a full underwriting review of support documentation including, but not limited to, applicants' creditworthiness, assets, income information, and a satisfactory appraisal.
+            </div>
+        </div>
+        <div class="flex-shrink-0 mt-6 lg:mt-0">
+            <img src="/img/side-img.avif" alt="side-image" class="w-full lg:w-[450px] h-auto lg:mr-10">
+        </div>
+    </main>
+
+  <div class="flex flex-col lg:flex-row gap-6 max-w-[1400px] mt-8 mx-4 md:mx-9 px-4">  
+    <div class="bg-white border-2 border-white rounded-lg flex-1 transition-all duration-300 ease-in-out flex overflow-hidden shadow-md hover:border-2 hover:border-black hover:shadow-lg hover:-translate-y-1 min-w-0">
+        <div class="flex-shrink-0">
+            <img src="/img/location.avif" alt="location image" class="w-[100px] md:w-[140px] h-[100px] md:h-[140px] object-cover rounded-l-lg">
+        </div>
+
+        <div class="gap-x-2 gap-y-2 flex-col flex-1 justify-center py-4 px-3 md:py-6 md:px-4 leading-4 flex"> 
+            <div style="font-family: 'Bebas Neue', sans-serif;" class="text-[#2d2d2d] text-xl md:text-2xl leading-6 md:leading-8 font-semibold" >
+                FIND A
+                <span class="scripted-text font-['Brush_Script_MT',cursive]">LOCATION</span>
+            </div>
+            <div class="text-xs md:text-sm text-[#4a7c59]">Browse our locations by state or find a Loan Officer using the lookup tool.</div>
+        </div>
+    </div>
+
+    <div class="bg-white border-2 border-white rounded-lg flex-1 transition-all duration-300 ease-in-out flex overflow-hidden shadow-md hover:border-2 hover:border-black hover:shadow-lg hover:-translate-y-1 min-w-0">
+        <div class="flex-shrink-0">
+            <img src="/img/calculator.avif" alt="calculator image" class="w-[100px] md:w-[140px] h-[100px] md:h-[140px] object-cover rounded-l-lg">
+        </div>
+
+        <div class="gap-x-2 gap-y-2 flex-col flex-1 justify-center py-4 px-3 md:py-6 md:px-4 leading-4 flex"> 
+            <div style="font-family: 'Bebas Neue', sans-serif;" class="text-[#2d2d2d] text-xl md:text-2xl leading-6 md:leading-8 font-semibold" >
+                MORTGAGE
+                <span class="scripted-text font-['Brush_Script_MT',cursive]">CALCULATORS</span>
+            </div>
+            <div class="text-xs md:text-sm text-[#4a7c59]">Check out our selection of calculators to estimate your possible options</div>
+        </div>
+    </div>
+
+    <div class="bg-white border-2 border-white rounded-lg flex-1 transition-all duration-300 ease-in-out flex overflow-hidden shadow-md hover:border-2 hover:border-black hover:shadow-lg hover:-translate-y-1 min-w-0">
+        <div class="flex-shrink-0">
+            <img src="/img/statement.avif" alt="location image" class="w-[100px] md:w-[140px] h-[100px] md:h-[140px] object-cover rounded-l-lg">
+        </div>
+
+        <div class="gap-x-2 gap-y-2 flex-col flex-1 justify-center py-4 px-3 md:py-6 md:px-4 leading-4 flex"> 
+            <div style="font-family: 'Bebas Neue', sans-serif;" class="text-[#2d2d2d] text-xl md:text-2xl leading-6 md:leading-8 font-semibold" >
+                PAYMENT
+                <span class="scripted-text font-['Brush_Script_MT',cursive]">INFORMATION</span>
+            </div>
+            <div class="text-xs md:text-sm text-[#4a7c59]">Get more information on were to make a payment and Fairway servicing FAQ's</div>
+        </div>
+    </div>
+  </div>     
+  
+  <section class="paper py-8 md:py-12 relative mt-16">
+    <div class="z-9 items-center w-full max-w-[1440px] mx-auto px-4 md:px-6 block relative">
+        <div class="bg-white rounded-3xl justify-center items-center flex-col lg:flex-row flex overflow-hidden">
+            <div class="rounded-t-3xl lg:rounded-tl-3xl lg:rounded-bl-3xl lg:rounded-tr-none flex-1 self-stretch relative w-full lg:w-auto">
+                <img src="/img/side2img.avif" alt="" class="w-full h-full object-cover">
+            </div>
+
+            <div class="gap-x-3 gap-y-3 flex-1 justify-center self-stretch items-start w-full lg:max-w-[50%] p-6 md:p-12 flex-col flex">
+                <div class="text-[#0f6b4b] tracking-[2px] uppercase text-xs font-semibold">Start The Process Here</div>
+                <h2 style="font-family: 'Bebas Neue', sans-serif;" class="mt-0 mb-5 text-3xl md:text-5xl leading-tight font-bold uppercase">Experience a quick, hassle-free mortgage pre-approval process.</h2>
+                <p class="mb-4 text-sm md:text-base leading-6 font-['Montserrat']">
+                    Discover how our innovative mortgage solutions can empower your home buying journey. 
+                    Our streamlined pre-approval process ensures you get the financing you need without the wait. 
+                    Start your journey to homeownership today with confidence and ease.
+                </p>
+                <a href="#" class="text-[#00973a] underline hover:text-black transition-all duration-300">Find A Loan Officer</a>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="paper-1 pt-8 pb-8 md:pt-12 md:pb-12 relative">
+    <div class="z-9 items-center w-full max-w-[1400px] mx-auto px-4 md:px-6 block relative">
+        <div class="gap-6 justify-center items-stretch flex-col lg:flex-row flex">
+            <div class="flex-col flex-1 justify-center self-stretch items-start flex overflow-hidden">
+                <div class="gap-3 pt-8 pb-4 flex-col items-start flex">
+                    <h2 style="font-family: 'Oswald', sans-serif;" class="mt-0 mb-5 text-3xl md:text-5xl leading-tight font-bold tracking-tighter uppercase">
+                        <span class="text-[#00973a] uppercase" style="font-family: 'Oswald', sans-serif;">Your home awaits,</span>
+                        Explore Fairway's loan options.
+                    </h2>
+                    <p class="mb-4 text-sm md:text-base leading-6 mt-0">
+                        At Fairway Home Mortgage, we offer a variety of mortgage loan options tailored to meet your needs. 
+                        Whether you're looking for a conventional, FHA, adjustable-rate, or fixed-rate mortgage, we have the perfect solution for you.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="flex-col gap-4 flex-1 justify-between self-stretch items-center lg:max-w-[35%] flex">
+                <div class="bg-white border-2 border-solid border-black rounded-md flex-col flex-1 self-stretch flex relative">
+                    <div class="flex-col flex-wrap flex-1 self-stretch items-start flex">
+                        <div class="border-b-2 border-b-solid border-b-black flex-col flex-nowrap self-stretch w-full p-4 md:p-6 flex">
+                            <div style="font-family: 'Bebas Neue', sans-serif;" class="text-3xl md:text-5xl leading-tight uppercase font-medium">The Loan Process</div>
+                            <div class="text-[#0f6b4b] tracking-[2px] uppercase text-xs font-semibold mt-2">
+                                Learn how fairway gets you from start to closing
+                            </div>
+                        </div>
+                        <div class="order-[-1] text-center flex-1 self-stretch h-full min-h-[225px] relative overflow-hidden">
+                            <img src="/img/matimg.avif" alt="home sweet home image" class="object-cover w-full h-full absolute top-0 bottom-0 hover:transition-transform duration-300 ease-in-out hover:scale-105">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="py-8 md:py-12 relative block bg-white">
+    <div class="z-9 flex-none w-full max-w-[1440px] mx-auto px-4 md:px-6 block relative">
+        <div class="text-center justify-center items-stretch gap-6 mx-auto flex-col flex">
+            <div class="text-[#0f6b4b] tracking-[2px] uppercase text-xs font-semibold">More than just a mortgage</div>
+            <h1 style="font-family: 'Oswald', sans-serif;" class="mb-3 text-4xl md:text-6xl leading-tight uppercase font-bold tracking-tighter">The
+                <span class="coll bg-[#00973a] text-white tracking-[4px] pt-3 px-3 inline-block font-['Brush_Script_MT',cursive]">Perks</span>
+                of the process
+            </h1>
+            <div class="gap-6 flex-1 justify-center items-stretch mx-auto flex-col lg:flex-row flex">
+                <div class="flex-1 self-stretch bg-white border-2 border-solid border-black flex-col flex relative hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                    <div class="flex-1 flex-col lg:flex-row items-start flex">
+                        <div class="flex-col flex-nowrap flex-1 self-stretch items-start flex">
+                            <div class="border-b-2 border-b-solid border-b-black flex-col flex-nowrap self-stretch w-full p-4 md:p-6 flex">
+                                <div style="font-family: 'Bebas Neue', sans-serif;" class="font-medium text-2xl md:text-4xl leading-tight uppercase">
+                                    <span class="text-[#00973a]">Fairway</span>
+                                    Home Insurance
+                                </div>
+                            </div>
+                            <div class="px-4 py-4 md:px-6 md:py-6 text-xs md:text-sm font-['Montserrat',serif] leading-5">
+                                <p>Streamline the process by getting real time quotes from agents before you close. 
+                                    Bridging the gaps for homeowners, Fairway wants to provide you with the best experience possible from application to closing.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="text-justify flex-1 order-[-1] self-stretch h-full min-h-[200px] relative overflow-hidden">
+                            <img src="/img/house.avif" alt="spilt image of a house" class="object-cover w-full h-full absolute top-0 bottom-0">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-1 self-stretch bg-white border-2 border-solid border-black flex-col flex relative hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                    <div class="flex-1 flex-col lg:flex-row items-start flex">
+                        <div class="flex-col flex-nowrap flex-1 self-stretch items-start flex">
+                            <div class="border-b-2 border-b-solid border-b-black flex-col flex-nowrap self-stretch w-full p-4 md:p-6 flex">
+                                <div style="font-family: 'Bebas Neue', sans-serif;" class="font-medium text-2xl md:text-4xl leading-tight uppercase">
+                                    <span class="text-[#00973a]">Fairway</span>
+                                    Home connect
+                                </div>
+                            </div>
+                            <div class="px-4 py-4 md:px-6 md:py-6 text-xs md:text-sm font-['Montserrat',serif] leading-5">
+                                <p>Have peace of mind knowing that your utilities can be transferred for you when your closing date is confirmed. 
+                                   Fairway makes is easy to connect your utilities or get them transferred over to your new home.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="text-justify flex-1 order-[-1] self-stretch h-full min-h-[200px] relative overflow-hidden">
+                            <img src="/img/housing.avif" alt="home image" class="object-cover w-full h-full absolute top-0 bottom-0">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-1 self-stretch bg-white border-2 border-solid border-black flex-col flex relative hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                    <div class="flex-1 flex-col lg:flex-row items-start flex">
+                        <div class="flex-col flex-nowrap flex-1 self-stretch items-start flex">
+                            <div class="border-b-2 border-b-solid border-b-black flex-col flex-nowrap self-stretch w-full p-4 md:p-6 flex">
+                                <div style="font-family: 'Bebas Neue', sans-serif;" class="font-medium text-2xl md:text-4xl leading-tight uppercase">
+                                    <span class="text-[#00973a]">Fairway</span>
+                                    title services
+                                </div>
+                            </div>
+                            <div class="px-4 py-4 md:px-6 md:py-6 text-xs md:text-sm font-['Montserrat',serif] leading-5">
+                                <p>1-2-3 we try to make it easy! From pre-qualification to the full application to the closing at title time. 
+                                    Making the closing process fast, secure, and in step with our award winning customer service we provide each borrower.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="text-justify flex-1 order-[-1] self-stretch h-full min-h-[200px] relative overflow-hidden">
+                            <img src="img/bank.avif" alt="bank image" class="object-cover w-full h-full absolute top-0 bottom-0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="Speckle bg-black bg-[url('/img/starry.png')] bg-cover bg-center py-8 md:py-12 relative">
+    <div class="z-9 items-center w-full max-w-[1440px] mx-auto px-4 md:px-6 flex relative flex-col lg:flex-row">
+        <div class="bg-white rounded-r-3xl justify-center items-start flex-col lg:flex-row flex overflow-hidden w-full">
+            <div class="rounded-t-3xl lg:rounded-tl-3xl lg:rounded-bl-3xl lg:rounded-tr-none flex-1 self-stretch relative w-full lg:w-auto">
+                <div class="text-justify flex-1 order-[-1] self-stretch h-full relative overflow-hidden min-h-[300px] lg:min-h-0">
+                    <img src="/img/brothers.avif" alt="two brothers sitting outside their house" class="object-cover w-full h-full absolute top-0 bottom-0">
+                </div>
+            </div>
+
+           <div class="gap-3 flex-1 justify-center self-stretch items-start w-full lg:max-w-[50%] px-6 py-6 md:px-9 md:py-9 flex-col flex">
+               <div class="text-[#0f6b4b] tracking-[2px] uppercase text-xs font-semibold">Making an impact everyday</div>
+               <h2 style="font-family: 'Bebas Neue', sans-serif;" class="uppercase mb-3 text-3xl md:text-5xl leading-7 font-semibold">
+                <span class="mort uppercase bg-[#00973a] text-white tracking-[4px] px-3 pt-2  font-['Brush_Script_MT',cursive]">Mortgages</span>
+               with a purpose
+            </h2>
+            <p class="mb-4 mt-0 text-sm md:text-base leading-6 block font-['Montserrat',serif]">
+                At Fairway, we're committed to providing exceptional mortgage solutions tailored to your needs. 
+                Our dedicated loan officers work tirelessly to secure the best options and fastest turn times in the industry.
+            </p>
+            <div class="gap-3 justify-start items-center flex-col sm:flex-row flex w-full">
+                <a href="#" class="text-sm bg-[#00973a] text-white cursor-pointer px-6 py-3 hover:bg-white hover:border-2 hover:border-[#00973a] hover:text-black hover:shadow-lg transform hover:-translate-y-1 rounded-xl font-['Montserrat',serif] font-semibold transition-all duration-300 inline-block w-full sm:w-auto text-center">About Fairway</a>
+                <a href="#" class="text-[#00973a] underline font-['Montserrat',serif] transition-all hover:text-black text-center">Fairway In The Community</a>
+            </div>
+           </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="paper-2 pt-12 pb-10 md:pt-16 md:pb-12 relative">
+    <div class="z-9 items-center w-full max-w-[1440px] mx-auto px-4 md:px-6 block relative">
+        <div class="gap-8 text-center justify-center items-stretch mx-auto flex-col">
+            <div class="flex-col flex-nowrap justify-center self-stretch items-center flex">
+                <h1 class="tracking-tighter mb-0 font-['Brush_Script_MT',cursive] text-7xl md:text-9xl lg:text-[13rem] uppercase font-normal leading-tight">culture</h1>
+                <div style="font-family: 'Bebas Neue', sans-serif;" class="uppercase tracking-[2px] text-2xl md:text-4xl lg:text-5xl leading-tight">Meets commitment</div>
+            </div>
+            <div class="text-[#00973a] text-lg md:text-xl lg:text-2xl font-medium mt-8 font-['Montserrat',serif]">At Fairway, people are at the heart of what we do.</div>
+            <div class="self-center items-center w-full max-w-4xl mx-auto">
+                <p class="mb-4 text-sm md:text-base leading-6 mt-6 px-4 font-['Montserrat',serif] block">
+                    Through our nonprofit organizations, Fairway Cares and American Warrior Initiative (AWI), we are able to bring comfort, 
+                    hope and support to people within the Fairway community and beyond. 
+                    Each year both non-profit organizations are able to grow and impact more lives through the generous contributions of Fairway employees.
+                </p>
+            </div>
+
+            <div class="gap-6 flex-1 justify-center items-stretch max-w-[1280px] mx-auto flex-col lg:flex-row flex">
+                <div class="bg-white border-2 border-solid border-black rounded-md flex-col flex-1 self-stretch flex relative hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                    <div class="flex-col flex-nowrap flex-1 self-stretch items-start flex">
+                        <div class="items-center justify-center border-b-solid border-b-2 border-b-black flex-col flex-nowrap self-stretch w-full p-4 md:p-6 flex text-center">
+                            <div style="font-family: 'Oswald', sans-serif;" class="text-2xl md:text-4xl leading-tight uppercase tracking-tighter">American Warrior Initiative</div>
+                        </div>
+                        <div class="p-4 md:p-6 text-xs md:text-sm leading-5">
+                            <p class="mb-4 text-sm md:text-base leading-6 mt-0 font-['Montserrat',serif]">
+                                American Warrior Initiative (AWI) is a nonprofit organization backed by Fairway whose mission is to educate,
+                                 encourage and inspire Americans to give back to our military.
+                            </p>
+                            <div class="gap-3 justify-center items-center flex-row flex">
+                                <a href="#" class="text-sm bg-[#00973a] text-center cursor-pointer py-3 px-6 font-['Montserrat',serif] font-semibold inline-block rounded-xl hover:bg-white hover:border-2 hover:border-[#00973a] hover:text-black hover:shadow-lg transform hover:-translate-y-1 text-white transition-all duration-300">Visit Their Website</a>
+                            </div>
+                        </div>
+
+                        <div class="text-justify flex-1 order-[-1] self-stretch h-full min-h-[200px] relative overflow-hidden">
+                            <img src="/img/warr.avif" alt="a woman putting mike to the mouth of a man" class="object-cover w-full h-full absolute top-0 bottom-0">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="bg-white border-2 border-solid border-black rounded-md flex-col flex-1 self-stretch flex relative hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                    <div class="flex-col flex-nowrap flex-1 self-stretch items-start flex">
+                        <div class="items-center justify-center border-b-solid border-b-2 border-b-black flex-col flex-nowrap self-stretch w-full p-4 md:p-6 flex text-center">
+                            <div style="font-family: 'Oswald', sans-serif;" class="text-2xl md:text-4xl leading-tight uppercase tracking-tighter">Fairway cares</div>
+                        </div>
+                        <div class="p-4 md:p-6 text-xs md:text-sm leading-5">
+                            <p class="mb-4 text-sm md:text-base leading-6 mt-0 font-['Montserrat',serif]">
+                                Fairway Cares is the charitable arm of Fairway Home Mortgage. 
+                                For over 20 years, Fairway's nationwide network of employees has demonstrated a deep care for the communities and people they serve.
+                            </p>
+                            <div class="gap-3 justify-center items-center flex-row flex">
+                                <a href="#" class="text-sm bg-[#00973a] text-center cursor-pointer py-3 px-6 font-['Montserrat',serif] font-semibold inline-block rounded-xl hover:bg-white hover:border-2 hover:border-[#00973a] hover:text-black hover:shadow-lg transform hover:-translate-y-1 text-white transition-all duration-300">Find Out More</a>
+                            </div>
+                        </div>
+
+                        <div class="text-justify flex-1 order-[-1] self-stretch h-full min-h-[200px] relative overflow-hidden">
+                            <img src="/img/cares.avif" alt="fairway cares image" class="object-cover w-full h-full absolute top-0 bottom-0">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="last relative py-10 overflow-hidden">
+        
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none">
+            <div class="bg-text font-black whitespace-nowrap">REVIEWS</div>
+        </div>
+        
+       
+        <div class="relative z-10 max-w-6xl mx-auto px-4 md:px-6">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+                <h2 style="font-family: 'Bebas Neue', sans-serif;" class="text-4xl md:text-6xl lg:text-7xl leading-none text-gray-900 mb-4 uppercase">
+                    Serving Borrowers Is Our Number One Priority
+                </h2>
+                <p class="text-[11px] tracking-[3px] uppercase text-gray-800">
+                    Real Homebuyer Experiences From Recently Closed Loans
+                </p>
+            </div>
+
+            <div class="relative mt-10">
+
+                <button 
+                    onclick="slideCarousel(-1)" 
+                    class="hidden md:flex absolute left-2 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white shadow-lg items-center justify-center text-3xl hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    ‹
+                </button>
+                
+                <div class="overflow-hidden py-4">
+                    <div id="carousel" class="flex gap-4 md:gap-6 px-4 md:px-16 transition-transform duration-500 ease-in-out">
+                        
+                        <div class="flex-shrink-0 w-64 md:w-72 bg-white rounded-xl p-4 shadow-lg flex flex-col items-center text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                            <div class="w-12 h-12 border-3 border-green-500 rounded-full flex items-center justify-center mb-2">
+                                <span class="text-2xl font-bold text-green-500">5</span>
+                            </div>
+                            <div class="flex gap-1 mb-3">
+                                <span class="text-green-500 text-lg">★</span>
+                                <span class="text-green-500 text-lg">★</span>
+                                <span class="text-green-500 text-lg">★</span>
+                                <span class="text-green-500 text-lg">★</span>
+                                <span class="text-green-500 text-lg">★</span>
+                            </div>
+                            <p class="text-sm leading-snug text-gray-700 mb-3 min-h-[60px]">
+                                Communication with Andrew is always a pleasure. I feel very secure in my decisions after speaking to him. He explains procedures very well. Signing documents was a breeze...
+                            </p>
+                            <div class="handwriting text-xl mb-1 text-gray-900">Melesta A</div>
+                            <div class="text-xs text-gray-600 mb-2">Overland Park, KS</div>
+                            <div class="bg-gray-900 text-white px-3 py-1 rounded-full text-[10px] font-medium">
+                                Date: 10/12/2025
+                            </div>
+                        </div>
+
+                        <div class="flex-shrink-0 w-64 md:w-72 bg-white rounded-xl p-4 shadow-lg flex flex-col items-center text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                            <div class="w-12 h-12 border-3 border-green-500 rounded-full flex items-center justify-center mb-2">
+                                <span class="text-2xl font-bold text-green-500">5</span>
+                            </div>
+                            <div class="flex gap-1 mb-3">
+                                <span class="text-green-500 text-lg">★</span>
+                                <span class="text-green-500 text-lg">★</span>
+                                <span class="text-green-500 text-lg">★</span>
+                                <span class="text-green-500 text-lg">★</span>
+                                <span class="text-green-500 text-lg">★</span>
+                            </div>
+                            <p class="text-sm leading-snug text-gray-700 mb-3 min-h-[60px]">
+                                Quick and clear communication.
+                            </p>
+                            <div class="handwriting text-xl mb-1 text-gray-900">Melissa</div>
+                            <div class="text-xs text-gray-600 mb-2">Overland Park, KS</div>
+                            <div class="bg-gray-900 text-white px-3 py-1 rounded-full text-[10px] font-medium">
+                                Date: 10/12/2025
+                            </div>
+                        </div>
+
+                        <div class="flex-shrink-0 w-64 md:w-72 bg-white rounded-xl p-4 shadow-lg flex flex-col items-center text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                            <div class="w-12 h-12 border-3 border-green-500 rounded-full flex items-center justify-center mb-2">
+                                <span class="text-2xl font-bold text-green-500 rounded-[60px]">5</span>
+                            </div>
+                            <div class="flex gap-1 mb-3">
+                                <span class="text-green-500 text-lg">★</span>
+                                <span class="text-green-500 text-lg">★</span>
+                                <span class="text-green-500 text-lg">★</span>
+                                <span class="text-green-500 text-lg">★</span>
+                                <span class="text-green-500 text-lg">★</span>
+                            </div>
+                            <p class="text-sm leading-snug text-gray-700 mb-3 min-h-[60px]">
+                                Everything!
+                            </p>
+                            <div class="handwriting text-xl mb-1 text-gray-900">Joevan</div>
+                            <div class="text-xs text-gray-600 mb-2">Shawnee, KS</div>
+                            <div class="bg-gray-900 text-white px-3 py-1 rounded-full text-[10px] font-medium">
+                                Date: 10/12/2025
+                            </div>
+                        </div>
+
+                        <div class="flex-shrink-0 w-64 md:w-72 bg-white rounded-xl p-4 shadow-lg flex flex-col items-center text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                            <div class="w-12 h-12 border-3 border-green-500 rounded-full flex items-center justify-center mb-2">
+                                <span class="text-2xl font-bold text-green-500">5</span>
+                            </div>
+                            <div class="flex gap-1 mb-3">
+                                <span class="text-green-500 text-lg">★</span>
+                                <span class="text-green-500 text-lg">★</span>
+                                <span class="text-green-500 text-lg">★</span>
+                                <span class="text-green-500 text-lg">★</span>
+                                <span class="text-green-500 text-lg">★</span>
+                            </div>
+                            <p class="text-sm leading-snug text-gray-700 mb-3 min-h-[60px]">
+                                She was very competitive when it came to finding me the best deal. Communication and customer service was great. Thank you.
+                            </p>
+                            <div class="handwriting text-xl mb-1 text-gray-900">Michael Scott</div>
+                            <div class="text-xs text-gray-600 mb-2">Florence, AZ</div>
+                            <div class="bg-gray-900 text-white px-3 py-1 rounded-full text-[10px] font-medium">
+                                Date: 10/12/2025
+                            </div>
+                        </div>
+
+                        <div class="flex-shrink-0 w-64 md:w-72 bg-white rounded-xl p-4 shadow-lg flex flex-col items-center text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                            <div class="w-12 h-12 border-3 border-green-500 rounded-full flex items-center justify-center mb-2">
+                                <span class="text-2xl font-bold text-green-500">5</span>
+                            </div>
+                            <div class="flex gap-1 mb-3">
+                                <span class="text-green-500 text-lg">★</span>
+                                <span class="text-green-500 text-lg">★</span>
+                                <span class="text-green-500 text-lg">★</span>
+                                <span class="text-green-500 text-lg">★</span>
+                                <span class="text-green-500 text-lg">★</span>
+                            </div>
+                            <p class="text-sm leading-snug text-gray-700 mb-3 min-h-[60px]">
+                                Professional service and excellent communication throughout the entire process.
+                            </p>
+                            <div class="handwriting text-xl mb-1 text-gray-900">Sarah Johnson</div>
+                            <div class="text-xs text-gray-600 mb-2">Kansas City, MO</div>
+                            <div class="bg-gray-900 text-white px-3 py-1 rounded-full text-[10px] font-medium">
+                                Date: 10/12/2025
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button 
+                    onclick="slideCarousel(1)" 
+                    class="hidden md:flex absolute right-2 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white shadow-lg items-center justify-center text-3xl hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    ›
+                </button>
+            </div>
+
+            <div class="md:hidden text-center mt-4 text-sm text-gray-600">
+                ← Swipe to see more reviews →
+            </div>
+
+            <div class="text-center mt-8 md:mt-10">
+                <button class="bg-gray-800 text-white px-8 md:px-10 py-3 rounded-lg text-sm md:text-base font-medium hover:bg-gray-900 hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
+                    See More Reviews
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-[.8rem] md:text-sm leading-relaxed bg-gray-50">
+    <div  class="flex-row flex-nowrap justify-between self-stretch items-start py-6">
+        <div class="z-9 flex-none items-center w-full max-w-[1440px] mx-auto px-4 md:px-6 relative">
+            <div class="gap-4 md:gap-6 justify-between items-stretch flex-col lg:flex-row flex">
+                <div class="gap-3 text-[#3f4444] bg-white border border-white border-solid rounded-xl flex-col mb-4 pt-3 px-4 md:px-6 pb-4 md:pb-6 flex">
+                    <div class="self-stretch">
+                        <div class="max-w-[200px] mx-auto pb-2">
+                            <img src="/img/fairway logo.avif" alt="Fairway Logo" class="w-full">
+                        </div>
+                        <div class="gap-2 bg-[#ffffff4d] justify-center items-start p-2 flex-row self-stretch flex">
+                            <a href="#" class="bg-[#115740] rounded-full mx-1 p-1 max-w-full inline-block hover:bg-[#00973a] transition-colors duration-300">
+                                <img src="/img/Facebook.png" alt="Facebook icon" width="30" class="transition-opacity duration-200 hover:opacity-80">
+                            </a>
+
+                            <a href="#" class="bg-[#115740] rounded-full mx-1 p-1 max-w-full inline-block hover:bg-[#00973a] transition-colors duration-300">
+                                <img src="/img/insta.png" alt="Instagram icon" width="30" class="transition-opacity duration-200 hover:opacity-80">
+                            </a>
+
+                            <a href="#" class="bg-[#115740] rounded-full mx-1 p-1 max-w-full inline-block hover:bg-[#00973a] transition-colors duration-300">
+                                <img src="/img/linkedin.png" alt="LinkedIn icon" width="30" class="transition-opacity duration-200 hover:opacity-80">
+                            </a>
+
+                            <a href="#" class="bg-[#115740] rounded-full mx-1 p-1 max-w-full inline-block hover:bg-[#00973a] transition-colors duration-300">
+                                <img src="/img/X.png" alt="X icon" width="30" class="transition-opacity duration-200 hover:opacity-80">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="text-center md:text-left md:ml-12">
+                        <div>
+                            <strong class="font-bold">Madison Headquarters Location</strong>
+                        </div>
+                        <div>
+                            4750 S. Biltmore Lane, Madison, WI 53718 <br>
+                            <strong>Toll Free:</strong>
+                            866-912-4800
+                        </div>
+                        <div>Monday-Friday, 8:30 a.m.-5:00 p.m. Central</div>
+                        <a href="#" class="text-[#00973a] underline hover:text-[#115740] transition-colors duration-300">NMLS Consumer Access</a>
+                    </div>
+                </div>
+
+                <div class="gap-3 flex-1 self-center flex-col items-start">
+                    <div class="gap-4 flex-row justify-between self-stretch items-start flex">
+                        <div class="gap-1 bg-[#ffffff40] border-2 border-solid border-black rounded-lg flex-col self-stretch p-3 flex hover:shadow-lg transition-all duration-300">
+                            <div class="border-b border-b-solid border-b-[#aaa] mb-2 pb-2 text-base font-semibold">Customer service</div>
+                            <div class="text-sm leading-relaxed">
+                                <strong>Toll Free:</strong>
+                                <span>800-201-7544</span>
+                            </div>
+                            <a href="#" class="text-[#00973a] underline hover:text-[#115740] transition-colors duration-300">Contact Customer Service</a>
+                            <a href="#" class="text-[#00973a] underline hover:text-[#115740] transition-colors duration-300">Loan Serviced In New York? Click Here</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gap-3 flex-1 self-center flex-col items-start">
+                    <div class="gap-4 flex-row justify-between self-stretch items-start flex">
+                        <div class="gap-1 bg-[#ffffff40] border-2 border-solid border-black rounded-lg flex-col self-stretch p-3 flex hover:shadow-lg transition-all duration-300">
+                            <div class="border-b border-b-solid border-b-[#aaa] mb-2 pb-2 text-base font-semibold">Report Fraud / Suspicious Activity </div>
+                            <div class="text-sm leading-relaxed">
+                                <strong>Hotline:</strong>
+                                <span>855-902-0002</span>
+                            </div>
+                            <a href="#" class="text-[#00973a] underline hover:text-[#115740] transition-colors duration-300">Report An Incident Online, click here</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gap-3 flex-1 self-center flex-col items-start">
+                    <div class="gap-4 flex-row justify-between self-stretch items-start flex">
+                        <div class="gap-1 bg-[#ffffff40] border-2 border-solid border-black rounded-lg flex-col self-stretch p-3 flex hover:shadow-lg transition-all duration-300">
+                            <div class="border-b border-b-solid border-b-[#aaa] mb-2 pb-2 text-base font-semibold">Payment Information</div>
+                            <div class="text-sm leading-relaxed">
+                                <strong>Toll Free:</strong>
+                                <span>800-555-1234</span>
+                            </div>
+                            <a href="#" class="text-[#00973a] underline hover:text-[#115740] transition-colors duration-300">Make a Payment</a>
+                            <a href="#" class="text-[#00973a] underline hover:text-[#115740] transition-colors duration-300">Servicing FAQ's</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rounded-xl self-stretch py-4 px-3 mt-6">
+                    <div class="border-b border-dotted border-[#aaa] mb-3 pb-2 text-base font-semibold">Legal Information & Links</div>
+                    <div class="gap-4 flex-row justify-between self-stretch items-start flex">
+                        <div class="gap-2 flex-row flex-wrap justify-start items-start flex">
+                            <a href="#" class="text-[#00973a] mb-3 underline hover:text-[#115740] transition-colors duration-300">Privacy Policy</a>
+                            <a href="#" class="text-[#00973a] mb-3 underline hover:text-[#115740] transition-colors duration-300">Terms Of Use</a>
+                            <a href="#" class="text-[#00973a] mb-3 underline hover:text-[#115740] transition-colors duration-300">Legal Disclosures</a>
+                            <a href="#" class="text-[#00973a] mb-3 underline hover:text-[#115740] transition-colors duration-300">Licensing</a>
+                            <a href="#" class="text-[#00973a] mb-3 underline hover:text-[#115740] transition-colors duration-300">Texas Consumers Complaints</a>
+                            <a href="#" class="text-[#00973a] mb-3 underline hover:text-[#115740] transition-colors duration-300">IL Community Reinvestment Notice</a>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+  </footer> 
+
+
+    <div class="bg-[#2c2d32] text-white py-6 px-4 md:px-8 w-full">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="text-xs text-gray-300 text-center md:text-left">
+                <p>© Copyright 2025 Fairway Independent Mortgage Corporation | NMLS Entity ID #2289 |</p>
+                <a href="#" class="text-gray-300 hover:underline transition-all duration-300">www.nmlsconsumeraccess.org</a>
+                <span> All Rights reserved.</span>
+            </div>
+            
+            <div class="flex items-center gap-2 md:gap-4 flex-wrap justify-center">
+                <img src="/img/icon1.png" alt="NMLS" class="h-8 md:h-10 p-1 hover:scale-110 transition-transform duration-300">
+                <img src="/img/icon2.png" alt="Equal Housing" class="h-8 md:h-10 p-1 hover:scale-110 transition-transform duration-300">
+                <img src="/img/icon3.png" alt="NAHREP" class="h-8 md:h-10 p-1 hover:scale-110 transition-transform duration-300">
+                <img src="img/icon4.png" alt="Realtor" class="h-8 md:h-10 p-1 hover:scale-110 transition-transform duration-300">
+                <img src="img//icon5.png" alt="FHA" class="h-8 md:h-10 p-1 hover:scale-110 transition-transform duration-300">
+                <img src="img//icon6.png" alt="BBB Accredited" class="h-10 md:h-12 p-1 hover:scale-110 transition-transform duration-300">
+            </div>
+        </div>
+    </div>
+</body>
+    <script>
+        let currentPosition = 0;
+        const carousel = document.getElementById('carousel');
+        const cardWidth = 288 + 24; // card width + gap
+
+        function slideCarousel(direction) {
+            const maxScroll = carousel.scrollWidth - carousel.parentElement.clientWidth;
+            currentPosition += direction * cardWidth;
+            
+            if (currentPosition < 0) {
+                currentPosition = 0;
+            } else if (currentPosition > maxScroll) {
+                currentPosition = maxScroll;
+            }
+            
+            carousel.style.transform = `translateX(-${currentPosition}px)`;
+        }
+        
+        function toggleMenu() {
+            const menu = document.querySelector('.mobile-menu');
+            menu.classList.toggle('open');
+        }
+        
+        // Enable touch swiping on mobile for carousel
+        let touchStartX = 0;
+        let touchEndX = 0;
+        
+        carousel.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+        
+        carousel.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        });
+        
+        function handleSwipe() {
+            if (touchStartX - touchEndX > 50) {
+                slideCarousel(1);
+            }
+            
+            if (touchEndX - touchStartX > 50) {
+                slideCarousel(-1);
+            }
+        }
+    </script>
+</html>
+

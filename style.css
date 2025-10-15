@@ -1,0 +1,118 @@
+        body {
+            background-color: #fdfdfd; /* base light tone */
+            background-image: radial-gradient(rgba(0, 0, 0, 0.025) 1px, transparent 1px);
+            background-size: 6px 6px; /* spacing of the dots */
+        }
+        .xxl-title {
+            text-transform: uppercase;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(3rem, 8vw, 8rem);
+            line-height: 120px;
+            font-weight: bold;
+        }
+        
+        .stroke-type{
+            color: #fff0;
+            -webkit-text-stroke-width: .2rem;
+            -webkit-text-stroke-color: #00973a;
+            font-weight: 400;
+        }
+        
+        .boxed-text {
+            text-transform: uppercase;
+            background: #00973a;
+            color: white;
+            padding: 8px 16px;
+            display: inline-block;
+            font-size: clamp(2rem, 5vw, 4rem);
+        }
+        
+        .scripted-text {
+            font-size: clamp(1.2rem, 3vw, 1.5rem);
+        }
+
+        .last{
+            background-image: linear-gradient(#00973ab3, #00973ab3), url(/bg.avif);
+            background-position: 0 0, 50%;
+            background-size: auto, 1200px;
+        }
+        
+        .bg-text {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(8rem, 20vw, 20rem);
+            color: rgba(0, 151, 58, 0.1);
+            line-height: 1;
+        }
+        
+        .handwriting {
+            font-family: 'Brush Script MT', cursive;
+        }
+
+        .paper{
+            background-image: radial-gradient(#00973a, #00973a99), url(/img/bg.avif);
+        }
+        
+        .paper-1{
+            background-image: linear-gradient(#ffffffa6, #ffffffa6, url(/img/bg.avif));
+            background-position: 0 0, 0 0;
+            background-size: auto, 1200px;
+        }
+        
+        .paper-1 {
+            background-image: linear-gradient(#ffffffa6, #ffffffa6, url(/img/bg.avif));
+        }
+        
+        .paper-2 {
+            background-image: linear-gradient(#ffffffa6, #ffffffa6, url(/img/bg.avif));
+        }
+        
+        button, a {
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .btn-1 {
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .btn-1:hover {
+            background: #ff8200;
+            color: black;
+            border-color: #ff8200;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 151, 58, 0.3);
+        }
+
+        .jp-underline{
+            background-color: #249448;
+            width: 100%;
+            height: 2px;
+        }
+        
+        /* Mobile Menu Styles */
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out;
+        }
+        
+        .mobile-menu.open {
+            max-height: 500px;
+        }
+
+        .bggg{
+            background-image: radial-gradient(#00973a99, #00973a99), url(/img/bg.avif);
+        }
+        
+        /* Hide mobile menu on desktop */
+        @media (min-width: 1024px) {
+            .mobile-menu-button {
+                display: none;
+            }
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 1023px) {
+            nav {
+                display: none;
+            }
+        }
