@@ -4,88 +4,135 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Mortgage Calculators Fairway</title>
-
-  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Font Awesome -->
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css">
+    <style>
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .mobile-menu.open {
+            max-height: 500px;
+        }
+        .hamburger-line {
+            transition: all 0.3s ease;
+        }
+        .hamburger.active .hamburger-line:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        .hamburger.active .hamburger-line:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger.active .hamburger-line:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+    </style>  
 </head>
 <body>
 
   
-  <header class="bg-white sticky top-0 z-50  shadow-lg rounded-b-lg">
-    <div class="max-w-7xl px-2 sm:px-3 lg:px-2">
-      <div class="flex items-center justify-between h-[14vh]">
-        <!-- Logo -->
-        <a href="#" class="flex items-center gap-3">
-          <!-- Replace with your fairway logo file -->
-          <img src="/img/fairway logo.avif" alt="Fairway logo" class="h-20 w-auto object-contain">
-        </a>
+    <header style="font-family: 'Montserrat';" class="shadow mt-0 sticky top-0 z-50  bg-[#fffffff7]">
+        <div class=" bg-[#0000] rounded-b-[12px] max-w-[1440px] mx-auto p-2 relative">
+            <div class="items-center w-full max-w-none mx-auto px-[10px] block relative">
+                <div class="justify-between items-center mx-auto flex">
 
-        <!-- Center nav (hidden on small screens) -->
-        <nav class="hidden lg:flex items-center gap-6 font-['Montserrat'] text-[13px]">
-          <a class="nav-link text-green-900 hover:text-green-600 font-[550]" href="#">About Us</a>
-          <a class="nav-link text-green-900 hover:text-green-600 font-[550]" href="#">Locations</a>
-          <a class="nav-link text-green-900 hover:text-green-600 font-[550]" href="#">Loan Products</a>
-          <a class="nav-link text-green-900 hover:text-green-600 font-[550]" href="#">Calculators</a>
-          <a class="nav-link text-green-900 hover:text-green-600 font-[550]" href="#">Videos</a>
-          <a class="nav-link text-green-900 hover:text-green-600 font-[550]" href="#">Careers</a>
-        </nav>
+                    <a href="#" class="items-center mr-0 pt-[3px] pb-2 flex max-w-[190px] pl-0 float-left text-[#333] relative">
+                        <img src="./img/fairway logo.avif" alt="logo" width="auto" class="align-middle max-w-full inline-block border-0">
+                    </a>
 
-        <!-- Right side: search + get started + hamburger -->
-        <div class="flex items-center gap-4">
-          <button class="hidden md:flex items-center gap-2 px-3 py-2 rounded hover:bg-gray-50">
-            <i class="fas fa-search text-lg text-gray-700"></i>
-            <span class="uppercase text-xs text-gray-600 font-semibold">Search</span>
-          </button>
+                    <div class="flex-1 justify-end hidden lg:flex">
+                        <div class="gap-x-6 gap-y-6 pr-3 flex">
+                            <div class="mx-0 block static">
+                                <a href="#" class="text-[#115740] text-[.8rem] font-medium leading-4 relative no-underline after:content-[''] after:absolute after:w-0 after:h-0.5 after:top-full after:text-[#00973a] after:mt-1 after:left-1/2 after:-translate-x-1/2 after:bg-current after:transition-all after:duration-300 hover:after:w-full">About Us</a>
+                            </div>
+                            <div class="mx-0 block static">
+                                <a href="#" class="text-[#115740] text-[.8rem] font-medium leading-4 relative no-underline after:content-[''] after:absolute after:w-0 after:h-0.5 after:top-full after:text-[#00973a] after:mt-1 after:left-1/2 after:-translate-x-1/2 after:bg-current after:transition-all after:duration-300 hover:after:w-full">Locations</a>
+                            </div>
+                            <div class="mx-0 block static">
+                                <a href="#" class="text-[#115740] text-[.8rem] font-medium leading-4 relative no-underline after:content-[''] after:absolute after:w-0 after:h-0.5 after:top-full after:text-[#00973a] after:mt-1 after:left-1/2 after:-translate-x-1/2 after:bg-current after:transition-all after:duration-300 hover:after:w-full">Loan Products</a>
+                            </div>
+                            <div class="mx-0 block static">
+                                <a href="#" class="text-[#115740] text-[.8rem] font-medium leading-4 relative no-underline after:content-[''] after:absolute after:w-0 after:h-0.5 after:top-full after:text-[#00973a] after:mt-1 after:left-1/2 after:-translate-x-1/2 after:bg-current after:transition-all after:duration-300 hover:after:w-full">Calculators</a>
+                            </div>
+                            <div class="mx-0 block static">
+                                <a href="#" class="text-[#115740] text-[.8rem] font-medium leading-4 relative no-underline after:content-[''] after:absolute after:w-0 after:h-0.5 after:top-full after:text-[#00973a] after:mt-1 after:left-1/2 after:-translate-x-1/2 after:bg-current after:transition-all after:duration-300 hover:after:w-full">Videos</a>
+                            </div>
+                            <div class="mx-0 block static">
+                                <a href="#" class="text-[#115740] text-[.8rem] font-medium leading-4 relative no-underline after:content-[''] after:absolute after:w-0 after:h-0.5 after:top-full after:text-[#00973a] after:mt-1 after:left-1/2 after:-translate-x-1/2 after:bg-current after:transition-all after:duration-300 hover:after:w-full">Careers</a>
+                            </div>
+                        </div>
+                    </div>
 
-          <a href="#get-started" class="hidden md:inline-block bg-orange-500 hover:text-gray-900 text-white font-bold py-2 px-4 rounded-lg w-50 h-50">
-            Get started
-          </a>
+                    <div class="gap-x-[18px] gap-y-[18px] border-l-[2px] border-dotted border-[#d3d3d3] hidden lg:flex items-center">
+                        <div class="block ml-[18px]">
+                            <a href="#" class="bg-[#ff8200] text-white w-full cursor-pointer text-[14px] text-center rounded-xl justify-center mx-[2px] py-[15px] px-[30px] font-['Montserrat'] font-semibold leading-5">Get started</a>
+                        </div>
 
-          <!-- Hamburger always visible on all sizes (if you want) -->
-          <button id="mobileToggle" aria-expanded="false" aria-controls="mobileMenu"
-                  class="p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[color:var(--fairway-orange)]">
-            <i id="mobileIcon" class="fas fa-bars text-2xl"></i>
-          </button>
+                        <div class="cursor-pointer justify-center leading-6 transition-opacity flex">
+                            <a href="#" class="text-[.8rem] font-semibold leading-4 max-w-full inline-block text-[#00973a]">
+                                <div class="gap-x-[4px] gap-y-[4px] rounded-[20px] flex-col justify-center items-center pt-[1px] flex">
+                                    <div class="bg-[#0000] rounded-[20px] justify-center items-center w-[30px] h-[30px] flex relative overflow-hidden">
+                                        <img src="./img/search.svg" alt="" class="w-[25px] h-[25px] mr-0 align-middle max-w-full inline-block border-0">
+                                    </div>
+                                    <div class="bg-[#0000] rounded-[20px] justify-center items-center w-auto flex">
+                                        <div>SEARCH</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="block">
+                            <div class="cursor-pointer flex-col justify-center items-center w-full h-full pt-3 transition-all duration-[.4s] flex">
+                                <div class="text-center flex-col justify-center items-end w-[50%] pb-[6px] flex">
+                                    <div class="bg-[#000] [transform-origin:100%] [perspective-origin:100%] w-full h-[2px] my-[2px] relative"></div>
+                                    <div class="bg-[#000] [transform-origin:100%] [perspective-origin:100%] w-full h-[2px] my-[2px] relative" style="width: 70%;"></div>
+                                    <div class="bg-[#000] [transform-origin:100%] [perspective-origin:100%] w-full h-[2px] my-[2px] relative"></div>
+                                </div>
+                                <a href="#" class="text-[#115740] text-[.8rem] uppercase font-medium leading-4 transition-opacity duration-[.2s]">Menu</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block lg:hidden">
+                        <button onclick="toggleMenu()" class="hamburger cursor-pointer flex-col justify-center items-center w-full h-full pt-3 transition-all duration-[.4s] flex p-2">
+                            <div class="text-center flex-col justify-center items-end w-[30px] pb-[6px] flex">
+                                <div class="hamburger-line bg-[#000] w-full h-[2px] my-[2px] relative"></div>
+                                <div class="hamburger-line bg-[#000] w-[70%] h-[2px] my-[2px] relative"></div>
+                                <div class="hamburger-line bg-[#000] w-full h-[2px] my-[2px] relative"></div>
+                            </div>
+                            <span class="text-[#115740] text-[.7rem] uppercase font-medium leading-4 transition-opacity duration-[.2s]">Menu</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mobile-menu bg-white shadow-lg lg:hidden rounded-b-lg">
+                    <nav class="flex flex-col p-4 space-y-3 text-sm font-medium">
+                        <a href="#" class="hover:text-[#00973a] font-['Montserrat'] transition-colors py-2 text-[#115740]">About Us</a>
+                        <a href="#" class="hover:text-[#00973a] font-['Montserrat'] transition-colors py-2 text-[#115740]">Locations</a>
+                        <a href="#" class="hover:text-[#00973a] font-['Montserrat'] transition-colors py-2 text-[#115740]">Loan Products</a>
+                        <a href="#" class="hover:text-[#00973a] font-['Montserrat'] transition-colors py-2 text-[#115740]">Calculators</a>
+                        <a href="#" class="hover:text-[#00973a] font-['Montserrat'] transition-colors py-2 text-[#115740]">Videos</a>
+                        <a href="#" class="hover:text-[#00973a] font-['Montserrat'] transition-colors py-2 text-[#115740]">Careers</a>
+                        <a href="#" class="bg-[#ff8200] text-white text-center rounded-xl py-3 px-7 w-full font-['Montserrat'] font-semibold mt-2">Get Started</a>
+                        <a href="#" class="flex items-center justify-center hover:text-[#00973a] transition-colors py-2 text-[#00973a]">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            <span class="font-['Montserrat'] font-semibold">SEARCH</span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+    </header>
 
-    <!-- MOBILE / DROPDOWN MENU (hidden by default, toggled with JS) -->
-    <div id="mobileMenu" class="max-h-0 overflow-hidden bg-white border-t">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <div class="flex flex-col gap-2">
-          <a href="#" class="block px-3 py-2 rounded hover:bg-green-50 text-green-800 font-medium">About Us</a>
-          <a href="#" class="block px-3 py-2 rounded hover:bg-green-50 text-green-800 font-medium">Locations</a>
-          <a href="#" class="block px-3 py-2 rounded hover:bg-green-50 text-green-800 font-medium">Loan Products</a>
-          <a href="#" class="block px-3 py-2 rounded hover:bg-green-50 text-green-800 font-medium">Calculators</a>
-          <a href="#" class="block px-3 py-2 rounded hover:bg-green-50 text-green-800 font-medium">Videos</a>
-          <a href="#" class="block px-3 py-2 rounded hover:bg-green-50 text-green-800 font-medium">Careers</a>
 
-          <div class="border-t border-gray-200 my-2"></div>
-
-          <button class="w-full text-left px-4 py-3 rounded-lg flex items-center gap-3 hover:bg-orange-500">
-            <i class="fas fa-search text-green-600"></i>
-            <span class="text-sm font-semibold text-green-800 uppercase">Search</span>
-          </button>
-
-          <a href="#get-started"
-     class="w-full block text-center bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 rounded-lg mt-2">
-     Get started
-  </a>
-        </div>
-      </div>
-    </div>
-  </header>
-
-<!--The first section-->
-
-<!-- Main Section -->
-<section style="background-size: auto, 1200px; font-family: 'Bebas Neue', serif;" class="bggg lg:pt-9 pb-16">
+  <section style="background-size: auto, 1200px; font-family: 'Bebas Neue', serif;" class="bggg lg:pt-9 pb-16">
 
     <div class="font-[sans-serif] py-5 px-4 text-[.7rem] italic">
     <div class="max-w-7xl mx-auto">
@@ -391,68 +438,12 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-  <script>
-    // set year in footer
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    (function () {
-      const toggle = document.getElementById('mobileToggle');
-      const menu = document.getElementById('mobileMenu');
-      const icon = document.getElementById('mobileIcon');
-
-      // start closed
-      menu.style.maxHeight = '0px';
-      toggle.setAttribute('aria-expanded', 'false');
-
-      function openMenu() {
-        menu.style.maxHeight = menu.scrollHeight + 'px';
-        menu.classList.add('shadow-lg');
-        toggle.setAttribute('aria-expanded', 'true');
-        icon.classList.remove('fa-bars');
-        icon.classList.add('fa-xmark');
-      }
-
-      function closeMenu() {
-        menu.style.maxHeight = '0px';
-        menu.classList.remove('shadow-lg');
-        toggle.setAttribute('aria-expanded', 'false');
-        icon.classList.remove('fa-xmark');
-        icon.classList.add('fa-bars');
-      }
-
-      toggle.addEventListener('click', () => {
-        const open = toggle.getAttribute('aria-expanded') === 'true';
-        if (open) closeMenu();
-        else openMenu();
-      });
-
-      // close when clicking link inside menu
-      menu.querySelectorAll('a, button').forEach(el => el.addEventListener('click', () => closeMenu()));
-
-      // close on resize (keeps consistent state)
-      window.addEventListener('resize', () => closeMenu());
-
-      // close when click outside
-      document.addEventListener('click', (e) => {
-        const inside = menu.contains(e.target) || toggle.contains(e.target) || e.target.closest('header');
-        if (!inside) closeMenu();
-      });
-    })();
-  </script>
 </body>
+  <script>
+    function toggleMenu() {
+        const menu = document.querySelector('.mobile-menu');
+        menu.classList.toggle('open');
+    }    
+  </script>
+
 </html>
